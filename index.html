@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bianca del Rio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <!--load all styles -->
+</head>
+
+<body>
+    <header class="header">
+        <div class="img-container logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="menu-hamburguesa">
+            <i class="fas fa-bars" onclick="activeMenu()" id="hamburguer"></i>
+        </div>
+        <div class="menu-container" id="menu">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="#home-page">Home Page</a></li>
+                    <li class="menu-item"><a href="#images">Images</a></li>
+                    <li class="menu-item"><a href="#contact">Contact</a></li>
+                    <li class="menu-item"><a href="register.html">Register</a></li>
+                    <li class="menu-item"><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="home-page-container" id="home-page">
+        <div class="img-container hero">
+            <img class="img-hero" src="./img/portada.jpg" alt="hero-image">
+        </div>
+    </section>
+    <section class="images-container" id="images">
+        <div class="img-container moments">
+            <img src="./img/img1.jpg" alt="">
+        </div>
+        <div class="img-container moments">
+            <img src="./img/img2.jpg" alt="">
+        </div>
+        <div class="img-container moments">
+            <img src="./img/img3.jpg" alt="">
+        </div>
+        <div class="img-container moments">
+            <img src="./img/img4.jpg" alt="">
+        </div>
+        <div class="img-container moments">
+            <img src="./img/img5.jpg" alt="">
+        </div>
+        <div class="img-container moments">
+            <img src="./img/img6.jpg" alt="">
+        </div>
+        <div class="img-container moments">
+            <img src="./img/img7.jpg" alt="">
+        </div>
+        <div class="img-container moments">
+            <img src="./img/img8.jpg" alt="">
+        </div>
+    </section>
+    <section class="contact-container" id="contact">
+        <h3 class="contact-title">Contact Us</h3>
+        <div class="formulario">
+            <input class="form name" type="text" placeholder="Name">
+            <input class="form email" type="text" placeholder="E mail">
+            <textarea name="textarea" rows="10" cols="10" class="message" placeholder="Deja tu mensaje"></textarea>
+            <button class="submit" type="submit">Send</button>
+        </div>
+    </section>
+    <footer class="footer-container">
+        <div class="img-container logo footer-logo">
+            <a href="#home-page"><img src="./img/logo.png" alt="footerlogo"></a>
+        </div>
+        <div class="rrss-icons">
+            <ul class="icon-list-container">
+
+                <li class="icon-item"><a target="_blank" href="https://www.instagram.com/joseborgesch"><i class="fab fa-instagram"></i></a></li>
+                <li class="icon-item"><a target="_blank" href="https://www.linkedin.com/in/joseborgesch/"><i class="fab fa-linkedin"></i></a></li>
+                <li class="icon-item"><a target="_blank" href="https://github.com/joseborgesch"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

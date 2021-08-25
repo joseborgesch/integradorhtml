@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    min-width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 20;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.menu-item a:hover {
+    color: #F37187;
+}
+
+.menu-item a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    margin: 10px;
+}
+
+#hamburguer {
+    font-size: 30px;
+}
+
+.active {
+    display: block;
+}
+
+.menu-hamburguesa {
+    display: none;
+}
+
+.hero {
+    width: auto;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.img-hero {
+    object-fit: cover;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.moments {
+    width: 25%;
+}
+
+.contact-container {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.formulario {
+    padding: 10px 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    margin: 10px;
+    line-height: 0;
+}
+
+.message:focus {
+    outline: none !important;
+    border: 2px solid #ea899a;
+    /* box-shadow: 0 0 10px  #ea899a;  */
+}
+
+.message {
+    resize: none;
+    margin: 10px 0;
+}
+
+.submit {
+    width: 50px;
+    height: 30px;
+    align-self: center;
+    background-color: #ea899a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.form:focus {
+    outline: none !important;
+    border: 2px solid #ea899a;
+    /* box-shadow: 0 0 10px  #ea899a;  */
+}
+
+
+.contact-title {
+    color: #ea899a;
+}
+
+.footer-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ea899a;
+    padding: 10px 30px;
+}
+
+.to-top {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.icon-list-container {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icon-item {
+    font-size: 30px;
+}
+
+i {
+    color: white;
+}
+
+.rrss-icons {
+    width: 15%;
+}
+
+/* LOGIN PAGE */
+
+
+.formul {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.btnlogin {
+
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btnhomepage1 {
+    width: auto;
+    padding: 10px 18px;
+    ;
+    margin-left: 830px;
+    margin-top: 60px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    margin-left: 830px;
+    margin-top: 60px;
+}
+
+.contimagen {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 15%;
+    border-radius: 5%;
+}
+
+.contenedor {
+    padding: 16px;
+}
+
+
+
+.cancelbtn {
+    width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1000px) {
+    .rrss-icons {
+        width: 30%;
+    }
+
+    .moments {
+        width: 33.3%;
+    }
+
+    .formulario {
+        padding: 80px;
+
+    }
+
+    .menu-hamburguesa {
+        display: block;
+
+    }
+
+    .menu-container {
+        display: none;
+    }
+
+    .active {
+        display: block;
+        position: absolute;
+        z-index: 30;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        margin: -30px;
+        right: 60px;
+    }
+    /* .active .menu{
+        width: inherit;
+    } */
+
+    .active .menu-list{
+        display: flex;
+        flex-direction: column;
+        /* width: inherit; */
+    }
+
+    .active .menu .menu-item{
+        /* width: inherit; */
+        text-align: right;
+    }
+
+    .header {
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    .rrss-icons {
+        width: 30%;
+    }
+
+    .moments {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-container {
+        justify-content: center;
+    }
+
+    .rrss-icons {
+        width: 100%;
+    }
+
+    .moments {
+        width: 100%;
+    }
+}

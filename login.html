@@ -8,32 +8,26 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class=fullbody>
-        <div class="contimagen">
-            <img src="" alt="Avatar" class="avatar">
-        </div>
-        <article class="formul">
-        <div class="contenedor">
-            <label for="uname"><b>User</b></label>
-            <input type="text" placeholder="User goes here!" name="uname" required>
+    <div class="imgcontainer">
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      </div>
     
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Password goes here!" name="psw" required>
+      <div class="containerlog">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
     
-        <button class="btnlogin" type="sumbit">Login</button>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
     
+        <button class="button1" type="submit">Login</button>
         <label>
-            <input type="checkbox" checked="checked" name="Remember me"> Remember Me
+          <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
-    
-        </div>
-        </article>
-    <div class="contenedor">
-    <button type="button" class="cancelbtn"> Cancel</button>
-    <span class="psw">Forgot your <a href="#">Password?</a></span>
-    <button class="btnhomepage1"><a href="index.html">Back to the Home Page</a></button>
-    </div>
-    </div>
-
+      </div>
+      <div class="container" style="background-color:#f1f1f1">
+        <span class="psw">Forgot <a href="#">password?</a></span>
+        <a href="index.html">Back to the homepage</a>
+      </div>
+    </form>
 </body>
 </html>

@@ -196,7 +196,11 @@ i {
     opacity: 0.8;
   }
   
-
+.back2{
+    display: flex;
+    align-self: center;
+    
+}
   
   /* Center the avatar image inside this container */
   .imgcontainer {
